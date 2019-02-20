@@ -13,13 +13,14 @@ int main()
   cin>>numA>>numB>>numC;
 
   sortDescending(numA, numB, numC);
-  
+
   cout<<"From greatest to least, they are: ";
   cout<<numA<<","<<numB<<","<<numC<<endl;
   return 0;
 }
 
-void sortDescending(int first, int second, int third)
+//A function which takes in 3 variables and rearranged them according to value (least to greatest)
+void sortDescending(int &first, int &second, int &third)
 {
   if( first < third )
   {
@@ -35,6 +36,7 @@ void sortDescending(int first, int second, int third)
   }
 }
 
+//A function that swaps two integer values by using a temporary integer
 void swap(int &first, int &second)
 {
   int temp = first;
